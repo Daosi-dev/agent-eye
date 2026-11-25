@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "antigravity-human-control"
+version = "2.1.0"
+description = "Hybrid multi-tier Windows desktop & browser control skill with Smart Capability Routing, WinRT OCR, Outer-Ruler 1000x1000 Vision, and Adaptive Kinematics."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Antigravity Human Control Contributors" }
+]
+keywords = ["windows", "automation", "ai-agent", "skill", "cdp", "uia", "ocr", "computer-use"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = [
+    "mss>=9.0.1",
+    "pillow>=10.3.0",
+    "numpy>=1.26.0",
+    "websockets>=12.0",
+    "comtypes>=1.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+antigravity-control = "scripts.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Daosi-dev/agent-eye"
+Repository = "https://github.com/Daosi-dev/agent-eye"
+Issues = "https://github.com/Daosi-dev/agent-eye/issues"
+
+[tool.setuptools]
+packages = ["scripts", "scripts.engines"]
