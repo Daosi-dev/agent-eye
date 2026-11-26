@@ -11,6 +11,14 @@ Tổng hợp sức mạnh của cả **Computer Use** (nhìn màn hình + điề
 
 ---
 
+## Video Giới Thiệu (60fps Motion Graphics)
+
+[![Xem Video Giới Thiệu 60fps](media/agent-eye-poster.png)](https://github.com/Daosi-dev/agent-eye/raw/main/media/agent-eye-launch-v3-60fps.mp4)
+
+> Nhấn vào ảnh trên để xem/tải trực tiếp **Video giới thiệu 60fps âm thanh Stereo 48kHz** ([`media/agent-eye-launch-v3-60fps.mp4`](media/agent-eye-launch-v3-60fps.mp4)), được dựng nguyên bản bằng Google Skia C++ & SciPy DSP trong [`motion_studio/`](motion_studio/).
+
+---
+
 ## So Sánh Nhanh: Computer Use vs. `agent-desktop` vs. `antigravity-human-control`
 
 | Tính năng | Computer Use (Chỉ nhìn ảnh) | `agent-desktop` (Chỉ UIA) | `antigravity-human-control` (Lai 5 Tầng) |

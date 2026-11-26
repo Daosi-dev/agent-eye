@@ -12,6 +12,14 @@ Combines the best of **Computer Use** (DPI-accurate Vision + human/turbo cursor)
 
 ---
 
+## Launch Film (60fps Motion Graphics)
+
+[![Watch 60fps Launch Film](media/agent-eye-poster.png)](https://github.com/Daosi-dev/agent-eye/raw/main/media/agent-eye-launch-v3-60fps.mp4)
+
+> Click the preview above to stream/download the **32s 60fps Stereo Launch Film** ([`media/agent-eye-launch-v3-60fps.mp4`](media/agent-eye-launch-v3-60fps.mp4)), rendered natively with Google Skia C++ & 48kHz SciPy DSP in [`motion_studio/`](motion_studio/).
+
+---
+
 ## Comparison: Pure Computer Use vs. `agent-desktop` vs. `antigravity-human-control`
 
 | Capability | Pure Computer Use (Vision-only) | `agent-desktop` (UIA-only) | `antigravity-human-control` (Hybrid 5-Tier) |
@@ -93,6 +101,9 @@ Windows User Interface Privilege Isolation (UIPI) prevents Medium-integrity proc
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\install.ps1 -Dev
 .\.venv\Scripts\pytest.exe -v
+
+# Re-render the 60fps showcase film (requires skia-python, scipy, ffmpeg)
+.\.venv\Scripts\python.exe -m motion_studio.render_launch_film --out media\agent-eye-launch-v3-60fps.mp4
 ```
 
 Licensed under the [MIT License](LICENSE).

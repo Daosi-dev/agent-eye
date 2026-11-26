@@ -14,6 +14,9 @@ artifacts/
 tmp/
 *.log
 snapshots/
+media/*
+!media/agent-eye-launch-v3-60fps.mp4
+!media/agent-eye-poster.png
 
 # OS / IDE
 .DS_Store
